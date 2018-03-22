@@ -1,0 +1,68 @@
+<Window x:Class="U1_CareersIan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:U1_CareersIan"
+        mc:Ignorable="d"
+        Title="Computer Science" Height="350" Width="525">
+    <Grid Margin="0,0,0.4,-19.2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="167*"/>
+            <RowDefinition Height="121*"/>
+            <RowDefinition Height="21*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnprogram" Content="Queen's Program" Click="btnprogram_Click" Grid.Row="0" Grid.Column="0" Margin="0,0,420,0" Background="#FFF5E600" Foreground="Blue" FontSize="10" BorderBrush="#FF003AFF"/>
+        <Image x:Name="imgcampus" Source="http://www.queensu.ca/admission/sites/default/files/homepage-20121024-GB-Fall-On-Campus-91.jpg" Grid.Row="1" Visibility="Hidden"/>
+        <TextBlock x:Name="txtprogram" HorizontalAlignment="Left" Margin="73,0.4,0,0.2" Grid.Row="2" TextWrapping="Wrap" 
+                   Text="Queen's University Computer Science (COMP-G-BCP)
+                    &#x0a;Population of University: 24,143
+                    &#x0a;Location: Kingston, Ontario (129,653)
+                    &#x0a;Residence for 8 months costs anywhere between 13,000-15,000" Width="372" Visibility="Hidden"/>
+
+        <Button x:Name="btnprerequisite" Content="Prerequisites" Click="btnprerequisite_Click" Margin="140,0,280,0" Background="#FFF5E600" Foreground="Blue"/>
+        <Image x:Name="imgprerequisite" Source="http://www.cs.queensu.ca/images/charts/comp.png" Margin="0,0,0,0" Grid.Row="1" Visibility="Hidden"/>
+        <TextBlock x:Name="txtprerequisite" HorizontalAlignment="Left" Margin="73,0.4,0,0.2" Grid.Row="2" TextWrapping="Wrap" 
+                   Text="Required courses: English 4U, Calculus and Vectors 4U and Advanced Functions 4U
+                   &#x0a;Competitive Average: 83+%" Width="372" TextAlignment="Center" Visibility="Hidden"/>
+
+        <Button x:Name="btncourses" Content="Courses" Click="btncourses_Click" Margin="280,0,140,0" Foreground="Blue" Background="#FFF5E600"/>
+        <Image x:Name="imgcourses" Source="https://www.queensu.ca/gazette/sites/default/files/assets/stories/2016/Duncan.jpg" Grid.Row="1" Visibility="Hidden"/>
+        <TextBlock x:Name="txtcourses" HorizontalAlignment="Left" Margin="73,0.4,0,0.2" Grid.Row="2" TextWrapping="Wrap" 
+                   Text="First Year Courses: Introduction to Computing Science 1 and 2(CISC - 121, CISC - 124), Linear Algebra (Math-111)
+                   &#x0a; Differential and Integral Calculus (Math-121), Discrete Math 1 (CISC-102)
+                   &#x0a;Duration: four year course, full 120 credits" Width="372" TextAlignment="Center" Visibility="Hidden"/>
+
+        <Button x:Name="btncareers" Content="Careers" Click="btncareers_Click" Margin="420,0,0,0" Background="#FFF5E600" Foreground="Blue"/>
+        <Image x:Name="imgcareers" Source="https://www.queensu.ca/gazette/sites/default/files/assets/stories/2016/Duncan.jpg" Grid.Row="1" Visibility="Hidden"/>
+
+        <Button x:Name="btnelectric" Content="Electrical Engineer" Click="btnelectric_Click" Grid.Row="2" Margin="10,0,360,100" Visibility="Hidden"/>
+        <Image x:Name="imgelectric" Source="https://storage-prtl-co.imgix.net/mp/0abc7891.jpg?w=600" Grid.Row="1" Visibility="Hidden"/>
+        <TextBlock x:Name="txtelectric" Text="1. Use computer programs to design products, components, or electrical systems
+                                              &#x0a;2. Estimate quantities and cost of materials, equipment, and labour needed for projects
+                                              &#x0a;3. Supervise manufacturing process
+                                              &#x0a;4. Attend meetings to discuss and plan projects
+                                              &#x0a;5. Test systems and equipment to make sure they perform as required" HorizontalAlignment="Left" Margin="10,30.4,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="498" Height="80" Visibility="Hidden"/>
+
+        <Button x:Name="btnsoftware" Content="Software Engineer" Click="btnsoftware_Click" Grid.Row="2" Margin="185,0,185,100" Visibility="Hidden"/>
+        <Image x:Name="imgsoftware" Source="https://i1.wp.com/www.friendlywisdom.com/wp-content/uploads/2017/08/Software_engineering_intern.png?resize=825%2C510" Grid.Row="1" Visibility="Hidden"/>
+        <TextBlock x:Name="txtsoftware" Text="1. Applications engineers develop software programs that perform specific tasks
+                                              &#x0a;2. Systems engineers develop larger computer systems
+                                              &#x0a;3. Analyze project requirements and design software products or computer systems
+                                              &#x0a;4. Test and debug software or systems
+                                              &#x0a;5. Some specialize in systems analysis, sales, or research and design" HorizontalAlignment="Left" Margin="10,30.4,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="498" Height="80" Visibility="Hidden"/>
+
+
+
+        <Button x:Name="btngame" Content="Game Developer" Click="btngame_Click" Grid.Row="2" Margin="360,0,10,100" Visibility="Hidden"/>
+        <Image x:Name="imggame" Source="https://cdn.wccftech.com/wp-content/uploads/2016/10/game-developer.jpg" Grid.Row="1" Visibility="Hidden"/>
+        <TextBlock x:Name="txtgame" Text="1. Programmers write the computer code that controls gameplay
+                                              &#x0a;2. Graphic artists design characters, backgrounds, and other elements of a game's look
+                                              &#x0a;3. Musicians and sound designers create music and sound effects
+                                              &#x0a;4. Writers develop plots, text, and dialogue
+                                              &#x0a;5. Producers and managers oversee the work" HorizontalAlignment="Left" Margin="10,30.4,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="498" Height="80" Visibility="Hidden"/>
+
+
+    </Grid>
+</Window>
